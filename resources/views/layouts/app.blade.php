@@ -20,7 +20,9 @@
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">Department</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">Voting</a></li>
             </ul>
-            <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
+            <a href="{{ url('/login') }}" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
+            <!-- <a href="{{ url('/register') }}" class="bg-blue-900 text-white px-4 py-2 rounded-md">Register</a> -->
+
         </div>
     </nav>
 
