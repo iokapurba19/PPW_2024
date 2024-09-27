@@ -98,24 +98,25 @@
 
 <body>
     <div class="wrapper">
-        <form>
+        <form method="POST" action="{{route('register.post')}}">
+            @csrf
             <h1>Sign Up</h1>
             <div class="input-box">
-                <input type="text" placeholder="User Name" required>
+                <input type="text" name="name" placeholder="User Name" required>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Email Address" required>
+                <input type="email" name="email" placeholder="Email Address" required>
                 <i class='bx bxs-envelope'></i>
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Password" required>
+                <input type="text" name="password" placeholder="Password" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
-            <div class="input-box">
-                <input type="password" placeholder="Confirm Password" required>
+            <!-- <div class="input-box">
+                <input type="password" name="password" placeholder="Confirm Password" required>
                 <i class='bx bxs-lock-alt'></i>
-            </div>
+            </div> -->
             <div class="remember-forgot">
                 <label><input type="checkbox"> Remember Me</label>
             </div>
