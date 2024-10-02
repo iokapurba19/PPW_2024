@@ -102,17 +102,17 @@
 
 <body>
     <div class="wrapper">
-        <form>
+        <form method="POST" action="{{route('login.post')}}">
             @csrf
             <h1>Login</h1>
-			<div class="username-box">
+			<div class="name-box">
 				<p>Username</p>
 			</div>
             <div class="input-box">
-                <input id="username" name="username" type="text" placeholder="Value" required>
+                <input id="name" name="name" type="text" placeholder="Value" required>
                 <i class='bx bxs-user'></i>
             </div>
-			<div class="username-box">
+			<div class="name-box">
 				<p>Password</p>
 			</div>
             <div class="input-box">
