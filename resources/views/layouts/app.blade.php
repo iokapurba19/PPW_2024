@@ -19,7 +19,23 @@
             <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8">
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">Home</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">About us</a></li>
-                <li><a href="#" class="text-gray-700 hover:text-blue-500">Department</a></li>
+                
+                <!-- Dropdown Menu -->
+                <li class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-blue-500 flex items-center">
+                        Department
+                       <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 transform translate-y-2 z-20">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DIPTEK</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPAGSOS</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DPDK</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DHPM</a>
+                    </div>
+                </li>
+
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">Voting</a></li>
             </ul>
             <div class="mt-4 md:mt-0">
@@ -56,18 +72,4 @@
                 </a>
                 <a href="https://www.instagram.com/bem.itdel/" target="_blank" class="text-white hover:text-gray-400">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.057 1.98.24 2.43.402.53.182.91.398 1.311.799.402.401.618.782.799 1.311.163.451.345 1.261.402 2.431.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.057 1.17-.24 1.98-.402 2.43-.182.53-.398.91-.799 1.311-.401.402-.782.618-1.311.799-.451.163-1.261.345-2.431.402-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.057-1.98-.24-2.43-.402-.53-.182-.91-.398-1.311-.799-.402-.401-.618-.782-.799-1.311-.163-.451-.345-1.261-.402-2.431-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.057-1.17.24-1.98.402-2.43.182-.53.398-.91.799-1.311.401-.402.782-.618 1.311-.799.451-.163 1.261-.345 2.431-.402 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.257 0-3.667.012-4.947.071-1.28.059-2.164.248-2.905.518-.801.292-1.482.682-2.153 1.354-.672.672-1.062 1.352-1.354 2.153-.27.741-.459 1.625-.518 2.905-.059 1.28-.071 1.69-.071 4.947s.012 3.667.071 4.947c.059 1.28.248 2.164.518 2.905.292.801.682 1.482 1.354 2.153.672.672 1.352 1.062 2.153 1.354.741.27 1.625.459 2.905.518 1.28.059 1.69.071 4.947.071s3.667-.012 4.947-.071c1.28-.059 2.164-.248 2.905-.518.801-.292 1.482-.682 2.153-1.354.672-.672 1.062-1.352 1.354-2.153.27-.741.459-1.625.518-2.905.059-1.28.071-1.69.071-4.947s-.012-3.667-.071-4.947c-.059-1.28-.248-2.164-.518-2.905-.292-.801-.682-1.482-1.354-2.153-.672-.672-1.352-1.062-2.153-1.354-.741-.27-1.625-.459-2.905-.518-1.28-.059-1.69-.071-4.947-.071z" />
-                        <circle cx="12" cy="12" r="3.563" />
-                        <circle cx="16.5" cy="7.5" r="1.438" />
-                    </svg>
-                </a>
-                <a href="https://www.youtube.com/results?search_query=bem+del" target="_blank" class="text-white hover:text-gray-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19.615 3.184c-1.747-.296-8.625-.296-8.625-.296s-6.878 0-8.625.296c-2.169.369-3.387 2.224-3.614 4.389-.272 2.72-.272 8.397-.272 8.397s0 5.676.272 8.397c.227 2.165 1.445 4.02 3.614 4.389 1.747.296 8.625.296 8.625.296s6.878 0 8.625-.296c2.169-.369 3.387-2.224 3.614-4.389.272-2.72.272-8.397.272-8.397s0-5.676-.272-8.397c-.227-2.165-1.445-4.02-3.614-4.389zm-11.615 11.511v-6.49l6.229 3.243-6.229 3.247z" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.057 1.98.24 2.43.402.53.182.91.398 1.311.799.402.401.618.782.799 
