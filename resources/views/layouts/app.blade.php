@@ -17,7 +17,7 @@
                 </div>
             </div>
             <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8">
-                <li><a href="#" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                <li><a href="/index" class="text-gray-700 hover:text-blue-500">Home</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">About us</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">Department</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">Voting</a></li>

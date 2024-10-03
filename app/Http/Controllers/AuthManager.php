@@ -23,15 +23,33 @@ class AuthManager extends Controller
         ]);
         $credentials = $request->only('email', 'password');
         if (auth()->attempt($credentials)) {
-            return redirect(route('home'));
+            return redirect(route('indexes'));
         }
-        return redirect(route('home'))->with("error","Login details are not valid");
+        return redirect(route('indexes'))->with("error","Login details are not valid");
         
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ]);
-
     }
+
+    // function loginPost(Request $request){
+    //     $request->validate([
+    
+    //         'email' => 'required|email',
+    //         'password' => 'required'
+    //     ]);
+
+    //     $credentials = $request->only('email', 'password');
+        
+    //     if (auth()->attempt($credentials)) {
+    //         return redirect(route('indexes'))->with('success', 'Logged in successfully!');
+    //     }
+
+    //     return back()->withErrors([
+    //         'email' => 'Login details are not valid.',
+    //     ]);
+    // }
+
     
     function registerPost(Request $request){
         $request->validate([

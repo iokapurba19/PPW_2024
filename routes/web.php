@@ -10,6 +10,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/index', [HomeController::class, 'indexes'])->name('indexes');
 Route::get('/register', [AuthManager::class, 'register'])->name('register'); 
 Route::post('/register', [AuthManager::class, 'registerPost'])->name('register.post'); 
 Route::get('/login', [AuthManager::class, 'login'])->name('login');
