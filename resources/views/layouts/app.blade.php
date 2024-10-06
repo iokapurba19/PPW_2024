@@ -10,15 +10,15 @@
     <nav class="bg-white shadow p-4">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="flex items-center space-x-4 mb-4 md:mb-0">
-                <img src="{{ asset('image/bem.png') }}" alt="Logo IT Del" class="w-12 h-12 cursor-pointer">
+                <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
                 <div class="flex flex-col text-center md:text-left">
                     <span class="text-2xl font-bold text-gray-800">BEM IT Del</span>
                     <span class="text-0 font-bold text-gray-800">Kabinet Sahala Saunduran</span>
                 </div>
             </div>
-            <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8">
+            <ul class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 ml-9">
                 <li><a href="/index" class="text-gray-700 hover:text-blue-500">Home</a></li>
-                <li><a href="#" class="text-gray-700 hover:text-blue-500">About us</a></li>
+                <li><a href="about" class="text-gray-700 hover:text-blue-500">About us</a></li>
                 
                 <!-- Dropdown Menu -->
                 <li class="relative group">
@@ -33,6 +33,10 @@
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPAGSOS</a>
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DPDK</a>
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DHPM</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPKOMINFO</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">SARPRAS</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPOL</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPKEBDIS</a>
                     </div>
                 </li>
 
@@ -49,27 +53,40 @@
         @yield('content')
     </main>
     
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-6 mt-10">
-        <div class="container mx-auto text-center md:text-left md:flex justify-between items-center">
-            <div class="flex items-center mb-4 md:mb-0">
-                <img src="{{ asset('image/logodel.png') }}" alt="Logo IT Del" class="w-20 h-20 mx-4">
-                <div class="ml-4">
-                    <h3 class="text-lg font-bold">Kontak Kami</h3>
-                    <p>Institut Teknologi Del</p>
-                    <p>Jl. Sisingamangaraja, Sitoluama, Laguboti, Toba, Sumatera Utara, Indonesia</p>
-                    <p>Kode Pos: 22381</p>
-                    <p>+62 632 331234</p>
-                    <p>hims@del.ac.id</p>
-                </div>
+   <!-- Footer -->
+<footer class="bg-gray-900 text-white py-6 mt-10">
+    <div class="container mx-auto text-center md:text-left md:flex justify-between items-center">
+        <div class="flex items-center mb-4 md:mb-0">
+            <img src="{{ asset('image/logodel.png') }}" alt="Logo IT Del" class="w-20 h-20 mx-4">
+            <div class="ml-2">
+                <h3 class="text-lg font-bold">Kontak Kami</h3>
+                <p>Institut Teknologi Del</p>
+                <p>Jl. Sisingamangaraja, Sitoluama, Laguboti, Toba, Sumatera Utara, Indonesia</p>
+                <p>Kode Pos: 22381</p>
+                <p>+62 632 331234</p>
+                <p>hims@del.ac.id</p>
             </div>
-            <div class="flex space-x-4 justify-center md:justify-start mx-4">
-                <a href="mailto:hims@del.ac.id" target="_blank" class="text-white hover:text-gray-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 12.713l-11.985-6.713v14h23.971v-14z" />
-                        <path d="M12 11.287l11.985-6.713h-23.971z" />
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/bem.itdel/" target="_blank" class="text-white hover:text-gray-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.057 1.98.24 2.43.402.53.182.91.398 1.311.799.402.401.618.782.799 
+        </div>
+        <div class="flex space-x-4 justify-center md:justify-start mx-4">
+            <!-- Email Icon -->
+            <a href="mailto:hims@del.ac.id" target="_blank" class="text-white hover:text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 12.713L.015 6V20h23.97V6L12 12.713z" />
+                    <path d="M12 11.287L.015 4.573h23.97L12 11.287z" />
+                </svg>
+            </a>
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/bem.itdel/" target="_blank" class="text-white hover:text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.057 1.98.24 2.43.402.53.182.91.398 1.311.799.402.401.618.782.799 1.311.162.45.345 1.26.402 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.057 1.17-.24 1.98-.402 2.43-.182.53-.398.91-.799 1.311-.401.402-.782.618-1.311.799-.45.162-1.26.345-2.43.402-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.057-1.98-.24-2.43-.402-.53-.182-.91-.398-1.311-.799-.402-.401-.618-.782-.799-1.311-.162-.45-.345-1.26-.402-2.43-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.057-1.17.24-1.98.402-2.43.182-.53.398-.91.799-1.311.401-.402.782-.618 1.311-.799.45-.162 1.26-.345 2.43-.402 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.275.058-2.145.256-2.907.548a5.92 5.92 0 0 0-2.162 1.462 5.92 5.92 0 0 0-1.462 2.162c-.292.762-.49 1.632-.548 2.907-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.058 1.275.256 2.145.548 2.907a5.92 5.92 0 0 0 1.462 2.162 5.92 5.92 0 0 0 2.162 1.462c.762.292 1.632.49 2.907.548 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.275-.058 2.145-.256 2.907-.548a5.92 5.92 0 0 0 2.162-1.462 5.92 5.92 0 0 0 1.462-2.162c.292-.762.49-1.632.548-2.907.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.058-1.275-.256-2.145-.548-2.907a5.92 5.92 0 0 0-1.462-2.162 5.92 5.92 0 0 0-2.162-1.462c-.762-.292-1.632-.49-2.907-.548-1.28-.058-1.688-.072-4.947-.072zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/>
+                </svg>
+            </a>
+            <!-- YouTube Icon -->
+            <a href="https://www.youtube.com/channel/UCYitfQ3N-Jth9oRS63sVajA" target="_blank" class="text-white hover:text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19.615 3.184c1.202.176 2.168 1.142 2.344 2.344.338 2.297.338 7.092.338 7.092s0 4.795-.338 7.092c-.176 1.202-1.142 2.168-2.344 2.344-2.297.338-7.092.338-7.092.338s-4.795 0-7.092-.338c-1.202-.176-2.168-1.142-2.344-2.344C2.176 17.415 2.176 12.62 2.176 12.62s0-4.795.338-7.092c.176-1.202 1.142-2.168 2.344-2.344C7.155 2.846 12 2.846 12 2.846s4.795 0 7.092.338c1.202.176 2.168 1.142 2.344 2.344zM9.746 15.465l5.51-3.465-5.51-3.465v6.93z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>

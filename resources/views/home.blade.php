@@ -20,7 +20,7 @@
         </div>
         <div class="flex justify-end">
             <div class="w-1/2 px-10 justify-start">
-                <a href="#" class="mt-6 inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
+                <a href="aboutus" class="mt-6 inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
             </div>
         </div>
     </section>
@@ -41,7 +41,7 @@
             <!-- Foto Ketua di sebelah kanan -->
             <div class="w-full md:w-1/3 flex justify-center md:justify-end items-center mt-6 md:mt-0">
                 <div class="text-center">
-                    <img src="{{ asset('image/newsamuel.png') }}" alt="Samuel Simbolon" class="w-48 h-48 md:w-64 md:h-64 shadow-lg mx-auto">
+                    <img src="{{ asset('image/newsamuel.png') }}" alt="Samuel Simbolon" class="w-48 h-48 md:w-64 md:h-64  mx-auto">
                     <p class="mt-2 text-lg">Rony, Ketua BEM 2023/2024</p>
                 </div>
             </div>
@@ -51,7 +51,7 @@
             <!-- Foto Wakil Ketua di sebelah kiri -->
             <div class="w-full md:w-1/3 flex justify-center md:justify-start items-center mb-6 md:mb-0">
                 <div class="text-center">
-                    <img src="{{ asset('image/newrony.png') }}" alt="Bayu Peter Bukit" class="w-48 h-48 md:w-64 md:h-64 shadow-lg mx-auto">
+                    <img src="{{ asset('image/newrony.png') }}" alt="Bayu Peter Bukit" class="w-48 h-48 md:w-64 md:h-64  mx-auto">
                     <p class="mt-2 text-lg">Samuel, Wakil Ketua BEM 2023/2024</p>
                 </div>
             </div>
