@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
-use App\Models\User;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Auth;
+namespace App\Http\Controllers\Auth;
 
-class AuthManager extends Controller
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class LoginController extends Controller
 {
     function login(){
         return view('login');
@@ -22,7 +21,7 @@ class AuthManager extends Controller
             'password' => 'required'
         ]);
         $credentials = $request->only('email', 'password');
-        if (Auth::attempt($credentials)) {
+        if (auth()->attempt($credentials)) {
             return redirect(route('indexes'));
         }
         return redirect(route('indexes'))->with("error","Login details are not valid");
@@ -57,22 +56,5 @@ class AuthManager extends Controller
             'email' => 'required|email',
             'password' => 'required'
         ]);
-
-        $data['name'] = $request->name;
-        $data['email'] = $request->email;
-        $data['password'] = Hash::make($request->password);
-        $user = User::create($data);
-        if(!$user){
-            return redirect(route('register'))->with("error","Registeration failed, Try Again!");
-        }
-        return redirect(route('login'))->with("succes","Registeration succesfull");
-
-        function logout(){
-            Session::flush();
-            Auth::logout();
-            return redirect(route('login'));
-        }
-
     }
-
 }

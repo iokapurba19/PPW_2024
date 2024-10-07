@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>TESTING</title>
     <link rel="stylesheet" href="loginstyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
@@ -43,7 +43,7 @@
 
         .input-box {
             position: relative;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .input-box input {
@@ -78,10 +78,6 @@
             margin-bottom: 20px;
         }
 
-        .remember-forgot a {
-            color: black;
-            text-decoration: none;
-        }
 
         .btn {
             width: 100%;
@@ -102,32 +98,33 @@
 
 <body>
     <div class="wrapper">
-        <form method="POST" action="{{route('login.post')}}">
+        <form method="POST" action="{{route('register.post')}}">
             @csrf
-            <h1>Login</h1>
-			<div class="name-box">
-				<p>Username</p>
-			</div>
+            <h1>TESTING</h1>
             <div class="input-box">
-                <input id="email" name="email" type="text" placeholder="Value" required>
+                <input type="text" name="testname" placeholder="User Name" required>
                 <i class='bx bxs-user'></i>
             </div>
-			<div class="name-box">
-				<p>Password</p>
-			</div>
             <div class="input-box">
-                <input id="password" name="password" type="password" placeholder="Value" required>
+                <input type="email" name="testemail" placeholder="Email Address" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" name="password" placeholder="Password" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
+            <!-- <div class="input-box">
+                <input type="password" name="password" placeholder="Confirm Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div> -->
             <div class="remember-forgot">
                 <label><input type="checkbox"> Remember Me</label>
-                <a href="#">Forgot password?</a>
             </div>
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn">Register</button>
             <div class="register-link">
-                <p>Don't have an account? <a href="{{ url('/register') }}">Sign up</a></p>
+                <p>Already have an account? <a href="{{ url('/login') }}">Log in</a></p>
             </div>
         </form>
     </div>
 </body>
-</html> 
+</html>
