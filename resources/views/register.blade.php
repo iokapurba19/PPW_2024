@@ -113,10 +113,6 @@
                 <input type="text" name="password" placeholder="Password" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
-            <!-- <div class="input-box">
-                <input type="password" name="password" placeholder="Confirm Password" required>
-                <i class='bx bxs-lock-alt'></i>
-            </div> -->
             <div class="remember-forgot">
                 <label><input type="checkbox"> Remember Me</label>
             </div>

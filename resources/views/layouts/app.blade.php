@@ -17,7 +17,7 @@
                 </div>
             </div>
             <ul class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 ml-9">
-                <li><a href="/index" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                <li><a href="/" class="text-gray-700 hover:text-blue-500">Home</a></li>
                 <li><a href="about" class="text-gray-700 hover:text-blue-500">About us</a></li>
                 
                 <!-- Dropdown Menu -->
