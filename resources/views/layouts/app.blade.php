@@ -18,7 +18,7 @@
             </div>
             <ul class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 ml-9">
                 <li><a href="/" class="text-gray-700 hover:text-blue-500">Home</a></li>
-                <li><a href="about" class="text-gray-700 hover:text-blue-500">About us</a></li>
+                <li><a href="/about" class="text-gray-700 hover:text-blue-500">About us</a></li>
                 
                 <!-- Dropdown Menu -->
                 <li class="relative group">
@@ -29,7 +29,7 @@
                         </svg>
                     </a>
                     <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 transform translate-y-2 z-20">
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DIPTEK</a>
+                        <a href="/diptek" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DIPTEK</a>
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPAGSOS</a>
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DPDK</a>
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DHPM</a>
@@ -40,7 +40,7 @@
                     </div>
                 </li>
 
-                <li><a href="#" class="text-gray-700 hover:text-blue-500">Voting</a></li>
+                <li><a href="/vote" class="text-gray-700 hover:text-blue-500">Voting</a></li>
             </ul>
             <div class="mt-4 md:mt-0">
                 <a href="{{ url('/login') }}" class="bg-blue-900 text-white px-4 py-2 ml-0 rounded-md">Login</a>

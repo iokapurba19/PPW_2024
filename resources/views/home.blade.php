@@ -20,7 +20,7 @@
         </div>
         <div class="flex justify-end">
             <div class="w-1/2 px-10 justify-start">
-                <a href="aboutus" class="mt-6 inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
+                <a href="/about" class="mt-6 inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
             </div>
         </div>
     </section>
