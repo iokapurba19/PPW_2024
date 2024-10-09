@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 
 
 Route::get('/', function () {
@@ -32,3 +33,13 @@ Route::get('/content', function () {
 Route::get('/creator', function () {
     return view('content');
 })->name('creatorcontent');
+
+Route::get('/vote', function () {
+    return view('vote');
+})->name('vote');
+
+Route::get('/diptek', function () {
+    return view('diptek');
+})->name('diptek');
+
+route::get('/home', [AdminController::class, 'index'])->name('home');
