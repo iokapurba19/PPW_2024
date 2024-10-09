@@ -20,11 +20,62 @@
         </div>
 
         <!-- Bagian Gambar -->
-    <div class="w-full md:w-1/3 flex justify-center md:justify-end items-center mt-6 md:mt-0">
-    <img src="{{ asset('image/about.png') }}" alt="Samuel Simbolon" 
-         class="w-50 h-50 md:w-70 md:h-64 mx-auto md:mt-10 md:mb-5">
-    </div>  
+        <div class="w-full md:w-1/3 flex justify-center md:justify-end items-center mt-6 md:mt-0">
+            <img src="{{ asset('image/about.png') }}" alt="Samuel Simbolon" 
+                 class="w-50 h-50 md:w-70 md:h-64 mx-auto md:mt-10 md:mb-5">
+        </div>
+    </div>    
 </section>
-<h2 class="text-center">Program Unit Kegiatan Mahasiswa</h2>
+
+<!-- Program Unit Kegiatan Mahasiswa -->
+<section class="bg-white py-16">
+    <div class="container mx-auto">
+        <h2 class="text-center text-3xl font-bold mb-10">Program Unit Kegiatan Mahasiswa</h2>
+        <div class="flex overflow-x-auto space-x-6">
+            <!-- Item 1 -->
+            <div class="min-w-[200px] flex-shrink-0 text-center bg-white shadow-md rounded-lg">
+                <img src="{{ asset('image/basket.png') }}" alt="UKM Basket" class="w-full h-30 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">UKM Basket</h3>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="min-w-[200px] flex-shrink-0 text-center bg-white shadow-md rounded-lg">
+                <img src="{{ asset('image/gitar.png') }}" alt="UKM Gitar Mahasiswa" class="w-full h-30 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">UKM Paduan Gitar Mahasiswa</h3>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="min-w-[200px] flex-shrink-0 text-center bg-white shadow-md rounded-lg">
+                <img src="{{ asset('image/drama.png') }}" alt="UKM Del Dance Drama Club" class="w-full h- object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">UKM Del Dance Drama Club</h3>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="min-w-[200px] flex-shrink-0 text-center bg-white shadow-md rounded-lg">
+                <img src="{{ asset('image/ukm_paduan_suara.png') }}" alt="UKM Paduan Suara Mahasiswa" class="w-full h-40 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">UKM Paduan Suara Mahasiswa</h3>
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="min-w-[200px] flex-shrink-0 text-center bg-white shadow-md rounded-lg">
+                <img src="{{ asset('image/ukm_gdsc.png') }}" alt="UKM Google Developer Student Club" class="w-full h-40 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">UKM Google Developer Student Club</h3>
+                </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="min-w-[200px] flex-shrink-0 text-center bg-white shadow-md rounded-lg">
+                <img src="{{ asset('image/ukm_english_club.png') }}" alt="UKM English Club" class="w-full h-40 object-cover rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">UKM English Club</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 @endsection

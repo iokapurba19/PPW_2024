@@ -82,7 +82,7 @@
                 </svg>
             </a>
             <!-- YouTube Icon -->
-            <a href="https://www.youtube.com/channel/UCYitfQ3N-Jth9oRS63sVajA" target="_blank" class="text-white hover:text-gray-400">
+            <a href="https://www.youtube.com/@bemitdel" target="_blank" class="text-white hover:text-gray-400">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19.615 3.184c1.202.176 2.168 1.142 2.344 2.344.338 2.297.338 7.092.338 7.092s0 4.795-.338 7.092c-.176 1.202-1.142 2.168-2.344 2.344-2.297.338-7.092.338-7.092.338s-4.795 0-7.092-.338c-1.202-.176-2.168-1.142-2.344-2.344C2.176 17.415 2.176 12.62 2.176 12.62s0-4.795.338-7.092c.176-1.202 1.142-2.168 2.344-2.344C7.155 2.846 12 2.846 12 2.846s4.795 0 7.092.338c1.202.176 2.168 1.142 2.344 2.344zM9.746 15.465l5.51-3.465-5.51-3.465v6.93z"/>
                 </svg>

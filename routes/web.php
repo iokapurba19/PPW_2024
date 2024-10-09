@@ -20,3 +20,15 @@ Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 Route::get('/about', function () {
     return view('aboutus');
 })->name('home');
+
+Route::get('/admin', function () {
+    return view('admin');
+})->name('home');
+
+Route::get('/content', function () {
+    return view('Departcontent');
+})->name('departcontent');
+
+Route::get('/creator', function () {
+    return view('content');
+})->name('creatorcontent');

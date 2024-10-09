@@ -3,7 +3,7 @@
 @section('content')
     <div class="bg-cover bg-center h-screen relative" style="background-image: url('{{ asset('image/del.jpg') }}')">
         <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="container mx-auto h-full flex flex-col justify-end items-start relative z-10 text-white text-left p-10">
+        <div class="container mx-auto h-full flex flex-col justify-end items-start relative z-10 text-white text-left p-10 ">
             <h1 class="text-4xl font-bold">BEM INSTITUT TEKNOLOGI DEL</h1>
             <h2 class="text-2xl mt-2">KABINET SAHALA SAUDURAN 2023/2024</h2>
             <a href="#" class="mt-4 px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">What we do</a>
@@ -20,7 +20,7 @@
         </div>
         <div class="flex justify-end">
             <div class="w-1/2 px-10 justify-start">
-                <a href="aboutus" class="mt-6 inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
+                <a href="about" class="mt-6 inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
             </div>
         </div>
     </section>
@@ -51,7 +51,7 @@
             <!-- Foto Wakil Ketua di sebelah kiri -->
             <div class="w-full md:w-1/3 flex justify-center md:justify-start items-center mb-6 md:mb-0">
                 <div class="text-center">
-                    <img src="{{ asset('image/newrony.png') }}" alt="Bayu Peter Bukit" class="w-48 h-48 md:w-64 md:h-64  mx-auto">
+                    <img src="{{ asset('image/newrony.png') }}" alt="Bayu Peter Bukit" class="w-48 h-48 md:w-64 md:h-64  mb-25 ml-10">
                     <p class="mt-2 text-lg">Samuel, Wakil Ketua BEM 2023/2024</p>
                 </div>
             </div>
