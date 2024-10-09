@@ -3,7 +3,8 @@
 @section('content')
     <div class="bg-cover bg-center h-screen relative" style="background-image: url('{{ asset('image/del.jpg') }}')">
         <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="container mx-auto h-full flex flex-col justify-end items-start relative z-10 text-white text-left p-10">
+        <div class="container mx-auto h-full flex flex-col justify-end items-start relative z-10 text-white text-left p-10
+        0">
             <h1 class="text-4xl font-bold">BEM INSTITUT TEKNOLOGI DEL</h1>
             <h2 class="text-2xl mt-2">KABINET SAHALA SAUDURAN 2023/2024</h2>
             <a href="#" class="mt-4 px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">What we do</a>
