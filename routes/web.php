@@ -20,7 +20,7 @@ Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 
 Route::get('/about', function () {
     return view('aboutus');
-})->name('home');
+})->name('about');
 
 Route::get('/admin', function () {
     return view('admin');
@@ -41,5 +41,9 @@ Route::get('/vote', function () {
 Route::get('/diptek', function () {
     return view('diptek');
 })->name('diptek');
+
+Route::get('/depagsos', function () {
+    return view('depagsos');
+})->name('depagsos');
 
 route::get('/home', [AdminController::class, 'index'])->name('home');

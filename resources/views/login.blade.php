@@ -54,7 +54,7 @@
             border: 2px solid #ccc; /* Menambahkan border */
             background: #fff;
             color: #333;
-            border-radius: 5px;
+            border-radius: 10px;
             outline: none; /* Menghilangkan outline saat input di-focus */
         }
 

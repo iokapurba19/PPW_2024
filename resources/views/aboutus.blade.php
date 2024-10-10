@@ -3,10 +3,9 @@
 @section('content')
 <!-- Navbar -->
 <nav class="bg-gray-900 text-white w-full fixed top-0 left-0 z-50">
-    <!-- Isi navbar di sini -->
 </nav>
 
-<!-- Section dengan background kuning -->
+<!-- Section dengan background-->
 <section class="w-full bg-yellow-100 py-20">
     <div class="container mx-auto flex flex-col md:flex-row items-start md:space-x-10">
         <!-- Bagian Teks -->
@@ -34,7 +33,7 @@
         <div class="flex overflow-x-auto space-x-6">
             <!-- Item 1 -->
             <div class="min-w-[200px] flex-shrink-0 text-center bg-white shadow-md rounded-lg">
-                <img src="{{ asset('image/basket.png') }}" alt="UKM Basket" class="w-full h-30 object-cover rounded-t-lg">
+                <img src="{{ asset('image/basketss.jpeg') }}" alt="UKM Basket" class="w-full h-30 object-cover rounded-t-lg">
                 <div class="p-4">
                     <h3 class="text-lg font-semibold">UKM Basket</h3>
                 </div>
@@ -48,14 +47,14 @@
             </div>
             <!-- Item 3 -->
             <div class="min-w-[200px] flex-shrink-0 text-center bg-white shadow-md rounded-lg">
-                <img src="{{ asset('image/drama.png') }}" alt="UKM Del Dance Drama Club" class="w-full h- object-cover rounded-t-lg">
+                <img src="{{ asset('image/drama.png') }}" alt="UKM Del Dance Drama Club" class="w-full h-30 object-cover rounded-t-lg">
                 <div class="p-4">
                     <h3 class="text-lg font-semibold">UKM Del Dance Drama Club</h3>
                 </div>
             </div>
             <!-- Item 4 -->
             <div class="min-w-[200px] flex-shrink-0 text-center bg-white shadow-md rounded-lg">
-                <img src="{{ asset('image/ukm_paduan_suara.png') }}" alt="UKM Paduan Suara Mahasiswa" class="w-full h-40 object-cover rounded-t-lg">
+                <img src="{{ asset('image/suara.jpeg') }}" alt="UKM Paduan Suara Mahasiswa" class="w-full h-29 object-cover rounded-t-lg">
                 <div class="p-4">
                     <h3 class="text-lg font-semibold">UKM Paduan Suara Mahasiswa</h3>
                 </div>
