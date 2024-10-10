@@ -50,3 +50,9 @@ route::get('/strukturbem', [BEMController::class, 'index'])->name('strukturbem')
 route::get('/tambahdata', [BEMController::class, 'tambahdata'])->name('tambahdata');
 
 route::post('/insertdata', [BEMController::class, 'insertdata'])->name('insertdata');
+
+route::get('/tampilkandata/{id}', [BEMController::class, 'tampilkandata'])->name('tampilkandata');
+
+route::post('/updatedata/{id}', [BEMController::class, 'updatedata'])->name('updatedata');
+
+route::get('/delete/{id}', [BEMController::class, 'delete'])->name('delete');
