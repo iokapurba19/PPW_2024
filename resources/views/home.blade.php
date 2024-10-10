@@ -13,7 +13,7 @@
     <section class="container mx-auto py-20">
         <div class="text-left mb-10 mx-10">
             <h2 class="text-32xl font-bold py-2">Know about us</h2>
-            <h2 class="text-3xl font-bold">We empower your voice on campus</h2>
+            <h2 class="text-3xl font-bold">We empower your voice on campus now</h2>
             <div class = "w-1/2 px-10 justify-start">
             <p class="text-gray-600 mt-4">Kami hadir sebagai wadah bagi mahasiswa ITDel untuk berkolaborasi, berinovasi, dan menyuarakan aspirasi. Kami berperan dalam menyelenggarakan berbagai program serta kegiatan yang mendukung pengembangan akademik dan karakter mahasiswa, sekaligus menjadi jembatan antara mahasiswa dan pihak kampus.</p>
         </div>
