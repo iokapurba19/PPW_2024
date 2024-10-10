@@ -83,7 +83,7 @@
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
+                  <a class="nav-link" href="strukturbem">Services</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html"> About</a>

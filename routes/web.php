@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BEMController;
 
 
 Route::get('/', function () {
@@ -43,3 +44,9 @@ Route::get('/diptek', function () {
 })->name('diptek');
 
 route::get('/home', [AdminController::class, 'index'])->name('home');
+
+route::get('/strukturbem', [BEMController::class, 'index'])->name('strukturbem');
+
+route::get('/tambahdata', [BEMController::class, 'tambahdata'])->name('tambahdata');
+
+route::post('/insertdata', [BEMController::class, 'insertdata'])->name('insertdata');
