@@ -11,14 +11,6 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/index', [HomeController::class, 'indexes'])->name('indexes');
-Route::get('/register', [AuthManager::class, 'register'])->name('register'); 
-Route::post('/register', [AuthManager::class, 'registerPost'])->name('register.post'); 
-Route::get('/login', [AuthManager::class, 'login'])->name('login');
-Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post'); 
-Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
-
 Route::get('/about', function () {
     return view('aboutus');
 })->name('about');
@@ -46,6 +38,20 @@ Route::get('/diptek', function () {
 Route::get('/depagsos', function () {
     return view('depagsos');
 })->name('depagsos');
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/index', [HomeController::class, 'indexes'])->name('indexes');
+
+Route::get('/register', [AuthManager::class, 'register'])->name('register'); 
+
+Route::post('/register', [AuthManager::class, 'registerPost'])->name('register.post'); 
+
+Route::get('/login', [AuthManager::class, 'login'])->name('login');
+
+Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post'); 
+
+Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 
 route::get('/home', [AdminController::class, 'index'])->name('home');
 

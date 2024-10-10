@@ -14,6 +14,7 @@
 </head>
 <body class="flex">
 
+
     <!-- Sidebar -->
     <div class="w-20 h-screen bg-gray-800 p-5 fixed flex flex-col items-center space-y-10">
         <!-- Back button -->
