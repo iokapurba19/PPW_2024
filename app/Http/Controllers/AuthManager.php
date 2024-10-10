@@ -25,7 +25,7 @@ class AuthManager extends Controller
         if (Auth::attempt($credentials)) {
             // return redirect(route('home'));
             if(Auth::user()->role == 'admin'){
-                return view('admin.index');
+                return view('admin.admin');
 
             }
             return view('home');

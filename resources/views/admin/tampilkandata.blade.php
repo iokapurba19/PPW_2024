@@ -120,9 +120,7 @@
                     </div>
 
                     <div>
-                        <button type="submit"
-                        class="hover:shadow-form w-full rounded-md bg-green-500 py-3 px-8 text-center text-base font-semibold text-white outline-none"
-                        >
+                        <button type="submit"class="bg-green-500 hover:bg-green-700 hover:shadow-form w-full rounded-md py-3 px-8 text-center text-base font-semibold text-white outline-none">
                         Update Data
                         </button>
                     </div>

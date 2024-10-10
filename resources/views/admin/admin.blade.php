@@ -51,6 +51,13 @@
                 </a>
                 <span class="text-gray-300 text-xs mt-2">USER</span>
             </li>
+            
+            <li class="flex flex-col items-center">
+                <a href="strukturbem" class="bg-gray-100 p-3 rounded-full">
+                    <img src="" alt="Tours Icon" class="h-6 w-6"/>
+                </a>
+                <span class="text-gray-300 text-xs mt-2">Anggota BEM</span>
+            </li>
         </ul>
     </div>
 
