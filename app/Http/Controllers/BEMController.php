@@ -18,6 +18,11 @@ class BEMController extends Controller
         return view('admin.tambahdata');
     }
     
+    public function admin()
+    {
+        return view('admin.admin');
+    }
+    
     public function insertdata(Request $request)
     {   
         // dd($request->all());
