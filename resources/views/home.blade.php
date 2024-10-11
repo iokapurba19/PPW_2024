@@ -11,19 +11,24 @@
     </div>
 
     <section class="container mx-auto py-20">
-        <div class="text-left mb-10 mx-10">
-            <h2 class="text-32xl font-bold py-2">Know about us</h2>
-            <h2 class="text-3xl font-bold">We empower your voice on campus now</h2>
-            <div class = "w-1/2 px-10 justify-start">
+    <div class="flex items-start mb-10 mx-10">
+        <!-- Bagian Teks -->
+        <div class="w-1/2 pr-10">
+            <h2 class="text-4xl font-bold py-2">Know about us</h2>
+            <h2 class="text-3xl font-bold">We empower your voice on campus</h2>
             <p class="text-gray-600 mt-4">Kami hadir sebagai wadah bagi mahasiswa ITDel untuk berkolaborasi, berinovasi, dan menyuarakan aspirasi. Kami berperan dalam menyelenggarakan berbagai program serta kegiatan yang mendukung pengembangan akademik dan karakter mahasiswa, sekaligus menjadi jembatan antara mahasiswa dan pihak kampus.</p>
-        </div>
-        </div>
-        <div class="flex justify-end">
-            <div class="w-1/2 px-10 justify-start">
-                <a href="about" class="mt-6 inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
+            <div class="mt-6">
+                <a href="about" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
             </div>
         </div>
-    </section>
+
+        <!-- Bagian Gambar -->
+        <div class="w-1/2 pl-10">
+            <img src="{{ asset('image/inagurasi.jpg') }}" alt="Campus Collaboration" class="rounded-lg shadow-md">
+        </div>
+    </div>
+</section>
+
 
     <!-- Bagian Visi dan Misi -->
 <section class="bg-yellow-100 py-20">
