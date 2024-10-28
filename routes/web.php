@@ -68,3 +68,9 @@ route::post('/updatedata/{id}', [BEMController::class, 'updatedata'])->name('upd
 route::get('/delete/{id}', [BEMController::class, 'delete'])->name('delete');
 
 route::get('/admin', [BEMController::class, 'admin'])->name('admin');
+
+Route::post('/vote', [VoteController::class, 'castVote']);
+
+// Route::post('/vote', [VoteController::class, 'store']);
+
+// Route::get('/vote', [VoteController::class, 'showVotingPage']);
