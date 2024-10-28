@@ -40,13 +40,10 @@
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold mb-8">PROGRAM KERJA</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Ibadah jumat</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Weekly reflection</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Festival Musik Rohani (FMR)</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Paskah</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pengajian</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Sharing session</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Charity</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Festival Budaya</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Del ART Competition</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Makrab</a>
+
             </div>
         </div>
 
