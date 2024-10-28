@@ -12,7 +12,7 @@
         <!-- Images and Description -->
         <div class="flex justify-center mb-12">
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/logodepag.png') }}" alt="Department Logo" class="rounded-md mx-auto">
+                <img src="{{ asset('image/DPDK.png') }}" alt="Department Logo" class="rounded-md mx-auto">
             </div>
             <div class="w-1/2 p-4">
                 <img src="{{ asset('image/prodeg.png') }}" alt="Department Event" class="rounded-md mx-auto">
@@ -23,13 +23,13 @@
         <div class="text-center mb-12">
             <div class="flex justify-center space-x-8">
                 <div>
-                <img src="{{ asset('image/mariana.png') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mr-5 ml-15">
+                <img src="{{ asset('image/joseph.png') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mr-5 ml-15">
                     <p class="text-lg font-bold">MARIANA APRILYA</p>
                     <p>Kepala Divisi</p>
 
                 </div>
                 <div>
-                    <img src="{{ asset('image/Jaden.png') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
+                    <img src="{{ asset('image/youni.png') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
                     <p class="text-lg font-bold">Jaden Panggabean</p>
                     <p>Wakil Kepala Divisi</p>
                 </div>
