@@ -5,18 +5,17 @@
         <!-- Header Section -->
         <div class="text-center mb-12">
             <h1 class="text-4xl font-bold mb-4">DEPARTEMEN AGAMA DAN SOSIAL</h1>
-            <p class="text-gray-600 max-w-3xl mx-auto">
-            Departemen Agama dan Sosial (DEPAGSOS) Merupakan departemen yang bertugas untuk melakukan kegiatan yang berhubungan dengan kegiatan kerohanian dan social mahasiswa. Departemen ini berperan dalam kegiatan keagamaan dan social yang bekerjasama dengan keasramaan.
-            </p>
+            <p class="text-gray-600 max-w-5zxl mx-auto">
+            Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus            </p>
         </div>
 
         <!-- Images and Description -->
         <div class="flex justify-center mb-12">
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/depagsos.png')) }}" alt="Department Logo" class="rounded-md mx-auto">
+                <img src="{{ asset('image/logodepag.png') }}" alt="Department Logo" class="rounded-md mx-auto">
             </div>
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/your-department-image.jpg') }}" alt="Department Event" class="rounded-md mx-auto">
+                <img src="{{ asset('image/prodeg.png') }}" alt="Department Event" class="rounded-md mx-auto">
             </div>
         </div>
 
@@ -24,13 +23,14 @@
         <div class="text-center mb-12">
             <div class="flex justify-center space-x-8">
                 <div>
-                    <img src="{{ asset('image/leader1.jpg') }}" alt="Leader 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <img src="{{ asset('image/markus.png') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mr-5 ml-15">
                     <p class="text-lg font-bold">MARKUS HUTAGALUNG</p>
                     <p>Kepala Divisi</p>
+
                 </div>
                 <div>
-                    <img src="{{ asset('image/leader2.jpg') }}" alt="Leader 2" class="w-24 h-24 rounded-full mx-auto mb-4">
-                    <p class="text-lg font-bold">RICHARD ARITONANG</p>
+                    <img src="{{ asset('image/Richard.png') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
+                    <p class="text-lg font-bold">Richard</p>
                     <p>Wakil Kepala Divisi</p>
                 </div>
             </div>

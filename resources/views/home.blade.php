@@ -4,26 +4,31 @@
     <div class="bg-cover bg-center h-screen relative" style="background-image: url('{{ asset('image/del.jpg') }}')">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="container mx-auto h-full flex flex-col justify-end items-start relative z-10 text-white text-left p-10">
-            <h1 class="text-4xl font-bold">BEM INSTITUT TEKNOLOGI DEL</h1>
-            <h2 class="text-2xl mt-2">KABINET SAHALA SAUDURAN 2023/2024</h2>
-            <a href="#" class="mt-4 px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">What we do</a>
+            <h1 class="text-4xl font-bold mb-10">BEM INSTITUT TEKNOLOGI DEL</h1>
+            <h2 class="text-2xl mb-10">KABINET SAHALA SAUDURAN 2023/2024</h2>
+            <a href="#" class="mb-9 px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">What we do</a>
         </div>
     </div>
 
     <section class="container mx-auto py-20">
-        <div class="text-left mb-10 mx-10">
-            <h2 class="text-32xl font-bold py-2">Know about us</h2>
+    <div class="flex items-start mb-10 mx-10">
+        <!-- Bagian Teks -->
+        <div class="w-1/2 pr-10">
+            <h2 class="text-4xl font-bold py-2">Know about us</h2>
             <h2 class="text-3xl font-bold">We empower your voice on campus</h2>
-            <div class = "w-1/2 px-10 justify-start">
             <p class="text-gray-600 mt-4">Kami hadir sebagai wadah bagi mahasiswa ITDel untuk berkolaborasi, berinovasi, dan menyuarakan aspirasi. Kami berperan dalam menyelenggarakan berbagai program serta kegiatan yang mendukung pengembangan akademik dan karakter mahasiswa, sekaligus menjadi jembatan antara mahasiswa dan pihak kampus.</p>
-        </div>
-        </div>
-        <div class="flex justify-end">
-            <div class="w-1/2 px-10 justify-start">
-                <a href="aboutus" class="mt-6 inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
+            <div class="mt-6">
+                <a href="about" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
             </div>
         </div>
-    </section>
+
+        <!-- Bagian Gambar -->
+        <div class="w-1/2 pl-10">
+            <img src="{{ asset('image/inagurasi.jpg') }}" alt="Campus Collaboration" class="rounded-lg shadow-md">
+        </div>
+    </div>
+</section>
+
 
     <!-- Bagian Visi dan Misi -->
 <section class="bg-yellow-100 py-20">
@@ -49,9 +54,9 @@
 
         <div class="flex flex-wrap md:flex-nowrap justify-between items-start mt-10">
             <!-- Foto Wakil Ketua di sebelah kiri -->
-            <div class="w-full md:w-1/3 flex justify-center md:justify-start items-center mb-6 md:mb-0">
+            <div class="w-full md:w-1/3 flex justify-center md:justify-start items-center mb-6 mr-20 md:mb-0 mr-5">
                 <div class="text-center">
-                    <img src="{{ asset('image/newrony.png') }}" alt="Bayu Peter Bukit" class="w-48 h-48 md:w-64 md:h-64  mb-25 ml-10">
+                    <img src="{{ asset('image/newrony.png') }}" alt="Bayu Peter Bukit" class="w-48 h-48  md:w-64 md:h-64  mb-25 ml-10">
                     <p class="mt-2 text-lg">Samuel, Wakil Ketua BEM 2023/2024</p>
                 </div>
             </div>
@@ -73,26 +78,24 @@
     <section class="container mx-auto py-20">
         <h2 class="text-3xl font-bold text-center mb-10">DEPARTEMEN</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Contoh departemen -->
-            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer">
+            <!-- departemen -->
+            <a class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer" href="/diptek">
                 <img src="{{ asset('image/diptek.jpg') }}" alt="Departemen 1" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2">Departemen Ilmu Pengetahuan dan Teknologi</h3>
                 <p class="text-gray-600">Mengelola bidang ilmu pengetahuan dan teknologi, membantu meningkatkan minat akademik mahasiswa ITDel.</p>
-            </div>
+            </a>
 
-            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer">
+            <a class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer" href="/depagsos">
                 <img src="{{ asset('image/depagsos.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2">Departemen Agama dan Sosial</h3>
                 <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
-            </div>
+            </a>
 
             <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
                 <img src="{{ asset('image/Depsenbud.png') }}" alt="Departemen 3" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2">Departemen Seni dan Budaya</h3>
                 <p class="text-gray-600">Menumbuhkan dan memelihara kebudayaan dan seni di kalangan mahasiswa ITDel.</p>
             </div>
-
-            <!-- Tambahkan departemen lainnya di sini -->
 
             <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
                 <img src="{{ asset('image/DEPKEBDIS.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">

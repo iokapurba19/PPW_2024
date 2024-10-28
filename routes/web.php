@@ -43,10 +43,6 @@ Route::get('/diptek', function () {
     return view('diptek');
 })->name('diptek');
 
-Route::get('/depagsos', function () {
-    return view('depagsos');
-})->name('depagsos');
-
 route::get('/home', [AdminController::class, 'index'])->name('home');
 
 route::get('/strukturbem', [BEMController::class, 'index'])->name('strukturbem');

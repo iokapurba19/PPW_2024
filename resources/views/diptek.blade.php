@@ -16,7 +16,7 @@
                 <img src="{{ asset('image/logo-diptek.jpg') }}" alt="Department Logo" class="rounded-md mx-auto">
             </div>
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/your-department-image.jpg') }}" alt="Department Event" class="rounded-md mx-auto">
+                <img src="{{ asset('image/proker.png') }}" alt="Department Event" class="rounded-md mx-auto">
             </div>
         </div>
 
@@ -24,12 +24,13 @@
         <div class="text-center mb-12">
             <div class="flex justify-center space-x-8">
                 <div>
-                    <img src="{{ asset('image/leader1.jpg') }}" alt="Leader 1" class="w-24 h-24 rounded-full mx-auto mb-4">
-                    <p class="text-lg font-bold">JOSEPH NAHITUPULU</p>
+                <img src="{{ asset('image/joseph.png') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mr-12">
+                    <p class="text-lg font-bold">JOSEPH NAPITUPULU</p>
                     <p>Kepala Divisi</p>
+
                 </div>
                 <div>
-                    <img src="{{ asset('image/leader2.jpg') }}" alt="Leader 2" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <img src="{{ asset('image/youni.png') }}" alt="Leader 2"  class="w-30 h-30 rounded-full float-left mb-4 mr-12">
                     <p class="text-lg font-bold">YUNI LIMBAN TOBING</p>
                     <p>Wakil Kepala Divisi</p>
                 </div>

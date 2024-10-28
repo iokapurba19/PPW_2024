@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEM Institut Teknologi Del</title>
     @vite('resources/css/app.css')
+    <style>
+        /* Custom CSS for the blur effect */
+        .blur-effect {
+          filter: blur(100px);
+          pointer-events: none;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 50%;
+          z-index: 10;
+        }
+      </style>
 </head>
 <body class="bg-gray-100">
     <nav class="bg-white shadow p-4">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="flex items-center space-x-4 mb-4 md:mb-0">
-                <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
-                <div class="flex flex-col text-center md:text-left">
+              <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
+              <div class="flex flex-col text-center md:text-left">
                     <span class="text-2xl font-bold text-gray-800">BEM IT Del</span>
                     <span class="text-0 font-bold text-gray-800">Kabinet Sahala Saunduran</span>
                 </div>
@@ -30,7 +43,7 @@
                     </a>
                     <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 transform translate-y-2 z-20">
                         <a href="/diptek" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DIPTEK</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPAGSOS</a>
+                        <a href="/depagsos" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPAGSOS</a>
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DPDK</a>
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DHPM</a>
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPKOMINFO</a>
@@ -48,6 +61,16 @@
             </div>
         </div>
     </nav>
+    <div id="blur" class="blur-effect"></div>
+    <script>
+        // JavaScript to move the blur effect based on mouse movement
+        document.addEventListener('mousemove', function (e) {
+          const blurEffect = document.getElementById('blur');
+          blurEffect.style.top = `${e.clientY - 150}px`;  // Adjusting Y position
+          blurEffect.style.left = `${e.clientX - 150}px`; // Adjusting X position
+        });
+      </script>
+    
 
     <main>
         @yield('content')
@@ -64,7 +87,7 @@
                 <p>Jl. Sisingamangaraja, Sitoluama, Laguboti, Toba, Sumatera Utara, Indonesia</p>
                 <p>Kode Pos: 22381</p>
                 <p>+62 632 331234</p>
-                <p>hims@del.ac.id</p>
+                <p>info@del.ac.id</p>
             </div>
         </div>
         <div class="flex space-x-4 justify-center md:justify-start mx-4">
