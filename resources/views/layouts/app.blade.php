@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEM Institut Teknologi Del</title>
     @vite('resources/css/app.css')
+    <style>
+        /* Custom CSS for the blur effect */
+        .blur-effect {
+          filter: blur(100px);
+          pointer-events: none;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 50%;
+          z-index: 10;
+        }
+      </style>
 </head>
 <body class="bg-gray-100">
     <nav class="bg-white shadow p-4">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="flex items-center space-x-4 mb-4 md:mb-0">
-                <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
-                <div class="flex flex-col text-center md:text-left">
+              <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
+              <div class="flex flex-col text-center md:text-left">
                     <span class="text-2xl font-bold text-gray-800">BEM IT Del</span>
                     <span class="text-0 font-bold text-gray-800">Kabinet Sahala Saunduran</span>
                 </div>
@@ -48,6 +61,16 @@
             </div>
         </div>
     </nav>
+    <div id="blur" class="blur-effect"></div>
+    <script>
+        // JavaScript to move the blur effect based on mouse movement
+        document.addEventListener('mousemove', function (e) {
+          const blurEffect = document.getElementById('blur');
+          blurEffect.style.top = `${e.clientY - 150}px`;  // Adjusting Y position
+          blurEffect.style.left = `${e.clientX - 150}px`; // Adjusting X position
+        });
+      </script>
+    
 
     <main>
         @yield('content')
