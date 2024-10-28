@@ -39,6 +39,10 @@ Route::get('/depagsos', function () {
     return view('depagsos');
 })->name('depagsos');
 
+Route::get('/dpdk', function () {
+    return view('dpdk');
+})->name('dpdk');
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/index', [HomeController::class, 'indexes'])->name('indexes');
