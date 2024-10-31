@@ -6,7 +6,7 @@
         <div class="text-center mb-12">
             <h1 class="text-4xl font-bold mb-4">DEPARTEMEN PUSAT DALAM KAMPUS</h1>
             <p class="text-gray-600 max-w-5zxl mx-auto">
-            Departemen Pusat Dalam Kampus (DPDK) merupakan departemen yang memiliki peran penting dalam pelaksanaan pola hubungan dan pola pengambilan kebijakan pada ruang lingkup internal keluarga mahasiswa IT Del. Bertugas untuk mengurus aktivitas serta melakukan konsolidasi internal pada UKM dan HIMPARO.            </p>
+            Berperan dalam mengurus aktivitas serta melakukan konsolidasi internal pada UKM dan HIMPARO.            </p>
         </div>
 
         <!-- Images and Description -->
