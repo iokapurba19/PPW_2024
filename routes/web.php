@@ -68,3 +68,8 @@ route::post('/updatedata/{id}', [BEMController::class, 'updatedata'])->name('upd
 route::get('/delete/{id}', [BEMController::class, 'delete'])->name('delete');
 
 route::get('/admin', [BEMController::class, 'admin'])->name('admin');
+
+
+Route::get('/try', function () {
+    return view('try');
+})->name('try');

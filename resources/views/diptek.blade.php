@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+
     <div class="container mx-auto py-10">
         <!-- Header Section -->
         <div class="text-center mb-12">
