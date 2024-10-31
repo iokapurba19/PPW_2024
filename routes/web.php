@@ -78,6 +78,3 @@ route::get('/tambahdata', [BEMController::class, 'tambahdata'])->name('tambahdat
 route::post('/insertdata', [BEMController::class, 'insertdata'])->name('insertdata');
 
 
-Route::get('/try', function () {
-    return view('try');
-})->name('try');
