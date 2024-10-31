@@ -1,10 +1,20 @@
-document.querySelector('.button').addEventListener('click', function () {
-    this.classList.add('loading'); // Tambahkan kelas loading
+  document.addEventListener("DOMContentLoaded", function () {
+    const body = document.body;
+    // Fade-in on load
+    body.classList.add("fade-in", "fade");
 
-    // Menambahkan jeda sebelum melanjutkan aksi berikutnya
-    setTimeout(() => {
-        this.classList.remove('loading'); // Hapus kelas loading setelah selesai
-        // Aksi berikutnya, seperti pindah halaman atau menampilkan konten baru
-        window.location.href = 'your_next_page.html';
-    }, 1500); // Waktu jeda dalam milidetik (1.5 detik)
-});
+    // Fade-out on link click
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener("click", function (event) {
+        if (link.href !== window.location.href && link.target !== "_blank") {
+          event.preventDefault();
+          body.classList.remove("fade");
+          body.classList.add("fade-out");
+          setTimeout(() => {
+            window.location.href = link.href;
+          }, 500);
+        }
+      });
+    });
+  });
+

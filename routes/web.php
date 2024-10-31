@@ -80,3 +80,5 @@ route::get('/strukturbem', [BEMController::class, 'index'])->name('strukturbem')
 route::get('/tambahdata', [BEMController::class, 'tambahdata'])->name('tambahdata');
 
 route::post('/insertdata', [BEMController::class, 'insertdata'])->name('insertdata');
+
+
