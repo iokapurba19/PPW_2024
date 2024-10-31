@@ -24,7 +24,7 @@
         <div class="text-center mb-12">
             <div class="flex justify-center space-x-8">
                 <div>
-                <img src="{{ asset('image/joseph.png') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mr-12">
+                <img src="{{ asset('image/joseph.png') }}" alt="Leader 1" class=" h-30 rounded-full float-left mb-4 mr-12">
                     <p class="text-lg font-bold">JOSEPH NAPITUPULU</p>
                     <p>Kepala Divisi</p>
 

@@ -55,6 +55,10 @@ Route::get('/depsenbud', function () {
     return view('depsenbud');
 })->name('depsenbud');
 
+Route::get('/depol', function () {
+    return view('depol');
+})->name('depol');
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/index', [HomeController::class, 'indexes'])->name('indexes');
