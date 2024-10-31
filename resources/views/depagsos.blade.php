@@ -6,7 +6,7 @@
         <div class="text-center mb-12">
             <h1 class="text-4xl font-bold mb-4">DEPARTEMEN AGAMA DAN SOSIAL</h1>
             <p class="text-gray-600 max-w-5zxl mx-auto">
-            Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus            </p>
+            Departemen Agama dan Sosial (DEPAGSOS) Merupakan departemen yang bertugas untuk melakukan kegiatan yang berhubungan dengan kegiatan kerohanian dan social mahasiswa. Departemen ini berperan dalam kegiatan keagamaan dan social yang bekerjasama dengan keasramaan.            </p>
         </div>
 
         <!-- Images and Description -->
@@ -40,9 +40,13 @@
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold mb-8">PROGRAM KERJA</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Del Goes to School</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">DMSC</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">PKM</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Ibadah jumat</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Weekly reflection</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Festival Musik Rohani (FMR)</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Paskah</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pengajian</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Sharing session</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Charity</a>
             </div>
         </div>
 
