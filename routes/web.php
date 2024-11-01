@@ -55,6 +55,7 @@ Route::get('/depsenbud', function () {
     return view('depsenbud');
 })->name('depsenbud');
 
+<<<<<<< HEAD
 Route::get('/dpdk', function () {
     return view('dpdk');
 })->name('dpdk');
@@ -67,14 +68,19 @@ Route::get('/dhpm', function () {
     return view('dhpm');
 })->name('dhpm');
 
+=======
+>>>>>>> 63e00428e5c30c8bdeb9b6ffd3f05e38bdf934cb
 Route::get('/depol', function () {
     return view('depol');
 })->name('depol');
 
+<<<<<<< HEAD
 Route::get('/depkebdis', function () {
     return view('depkebdis');
 })->name('depkebdis');
 
+=======
+>>>>>>> 63e00428e5c30c8bdeb9b6ffd3f05e38bdf934cb
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/index', [HomeController::class, 'indexes'])->name('indexes');

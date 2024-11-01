@@ -15,7 +15,7 @@
                 <img src="{{ asset('image/logodepsen.png') }}" alt="Department Logo" class="rounded-md mx-auto">
             </div>
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/prodeg.png') }}" alt="Department Event" class="rounded-md mx-auto">
+                <img src="{{ asset('image/prodepsen.Jpg') }}" alt="Department Event" class="rounded-md mx-auto">
             </div>
         </div>
 
@@ -23,14 +23,24 @@
         <div class="text-center mb-12">
             <div class="flex justify-center space-x-8">
                 <div>
+<<<<<<< HEAD
                 <img src="{{ asset('image/ketua depsen.Jpg') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mr-5 ml-15">
                     <p class="text-lg font-bold">THEO MANULLANG</p>
+=======
+                <img src="{{ asset('image/ketua depsen.Jpg') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mr-12">
+                    <p class="text-lg font-bold">Theo Hosea Manullang</p>
+>>>>>>> 63e00428e5c30c8bdeb9b6ffd3f05e38bdf934cb
                     <p>Kepala Divisi</p>
 
                 </div>
                 <div>
+<<<<<<< HEAD
                     <img src="{{ asset('image/wakdepsenbud.jpg') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
                     <p class="text-lg font-bold">SALOMO GEMAYEL</p>
+=======
+                    <img src="{{ asset('image/wakdepsen.Jpg') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
+                    <p class="text-lg font-bold">Salomo Gemayel</p>
+>>>>>>> 63e00428e5c30c8bdeb9b6ffd3f05e38bdf934cb
                     <p>Wakil Kepala Divisi</p>
                 </div>
             </div>
