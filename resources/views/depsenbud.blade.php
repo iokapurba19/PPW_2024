@@ -23,13 +23,13 @@
         <div class="text-center mb-12">
             <div class="flex justify-center space-x-8">
                 <div>
-                <img src="{{ asset('image/ketua depsen.Jpg') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mr-5 ml-15">
+                <img src="{{ asset('image/theo.png') }}" alt="Leader 1" class="w-96 h-80 rounded-full float-left mx-7">
                     <p class="text-lg font-bold">Theo Hosea Manullang</p>
                     <p>Kepala Divisi</p>
 
                 </div>
                 <div>
-                    <img src="{{ asset('image/Richard.png') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
+                    <img src="{{ asset('image/Richard.png') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mx-7">
                     <p class="text-lg font-bold">Richard</p>
                     <p>Wakil Kepala Divisi</p>
                 </div>

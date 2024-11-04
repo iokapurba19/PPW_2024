@@ -12,7 +12,7 @@
         <!-- Images and Description -->
         <div class="flex justify-center mb-12">
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/DPDK.png') }}" alt="Department Logo" class="rounded-md mx-auto">
+                <img src="{{ asset('image/DPDK.png') }}" alt="Department Logo" class="rounded-md mx-auto w-96 ">
             </div>
             <div class="w-1/2 p-4">
                 <img src="{{ asset('image/prodeg.png') }}" alt="Department Event" class="rounded-md mx-auto">

@@ -20,24 +20,24 @@
         </div>
 
         <!-- Leaders Section -->
-        <div class="text-center mb-12">
+        <div class="flex justify-center space-x-10 text-center mt-6">
             <div class="flex justify-center space-x-8">
                 <div>
-                <img src="{{ asset('image/markus.png') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mr-5 ml-15">
-                    <p class="text-lg font-bold">MARKUS HUTAGALUNG</p>
+                <img src="{{ asset('image/markus.png') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mx-px">
+                    <p class="text-lg font-bold">MARKUS HUTAGALUNG</p> 
                     <p>Kepala Divisi</p>
 
                 </div>
                 <div>
-                    <img src="{{ asset('image/Richard.png') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
-                    <p class="text-lg font-bold">Richard</p>
+                    <img src="{{ asset('image/Richard.png') }}" alt="Leader 2"  class="w-30 h-30 rounded-full float-left mx-px px-4">
+                    <p class="text-lg font-bold ">Richard</p>
                     <p>Wakil Kepala Divisi</p>
                 </div>
             </div>
         </div>
 
         <!-- Program Kerja Section -->
-        <div class="text-center mb-12">
+        <div class="text-center mt-12">
             <h2 class="text-3xl font-bold mb-8">PROGRAM KERJA</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Ibadah jumat</a>
