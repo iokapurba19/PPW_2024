@@ -6,7 +6,7 @@
         <div class="text-center mb-12">
             <h1 class="text-4xl font-bold mb-4">DEPARTEMEN KOMUNIKASI DAN INFORMASI</h1>
             <p class="text-gray-600 max-w-5zxl mx-auto">
-            Departemen Komunikasi dan Informasi (DEPKOMINFO) Merupakan departemen yang menanggungjawabi kepentingan komunikasi dan informasi, jembatan antar departemen, dan memanfaatkan media komunikatif sebagai pusat informasi keorganisasian.            </p>
+            Berperan dalam menanggungjawabi kepentingan komunikasi dan informasi, jembatan antar departemen, dan memanfaatkan media komunikatif sebagai pusat informasi keorganisasian.            </p>
         </div>
 
         <!-- Images and Description -->
@@ -29,9 +29,7 @@
 
                 </div>
                 <div>
-                    <img src="{{ asset('') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
-                    <p class="text-lg font-bold">WAKIL</p>
-                    <p>Wakil Kepala Divisi</p>
+                    
                 </div>
             </div>
         </div>

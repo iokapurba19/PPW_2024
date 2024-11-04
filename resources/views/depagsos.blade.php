@@ -6,7 +6,7 @@
         <div class="text-center mb-12">
             <h1 class="text-4xl font-bold mb-4">DEPARTEMEN AGAMA DAN SOSIAL</h1>
             <p class="text-gray-600 max-w-5zxl mx-auto">
-            Departemen Agama dan Sosial (DEPAGSOS) Merupakan departemen yang bertugas untuk melakukan kegiatan yang berhubungan dengan kegiatan kerohanian dan social mahasiswa. Departemen ini berperan dalam kegiatan keagamaan dan social yang bekerjasama dengan keasramaan.            </p>
+            Berperan dalam melakukan kegiatan yang berhubungan dengan kegiatan kerohanian dan social mahasiswa. Departemen ini berperan dalam kegiatan keagamaan dan social yang bekerjasama dengan keasramaan.            </p>
         </div>
 
         <!-- Images and Description -->
