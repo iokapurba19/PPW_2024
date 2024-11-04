@@ -55,9 +55,25 @@ Route::get('/depsenbud', function () {
     return view('depsenbud');
 })->name('depsenbud');
 
+Route::get('/depkebdis', function () {
+    return view('depkebdis');
+})->name('depkebdis');
+
 Route::get('/depol', function () {
     return view('depol');
 })->name('depol');
+
+Route::get('/dpdk', function () {
+    return view('dpdk');
+})->name('depol');
+
+Route::get('/dpdk', function () {
+    return view('dpdk');
+})->name('depol');
+
+Route::get('/sarpras', function () {
+    return view('sarpras');
+})->name('sarpras');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 

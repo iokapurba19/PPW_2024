@@ -15,7 +15,7 @@
                 <img src="{{ asset('image/DHPM.png') }}" alt="Department Logo" class="rounded-md mx-auto">
             </div>
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/prodeg.png') }}" alt="Department Event" class="rounded-md mx-auto">
+                <img src="{{ asset('image/keg dhpm.jpg') }}" alt="Department Event" class="rounded-md mx-auto">
             </div>
         </div>
 
@@ -29,8 +29,8 @@
 
                 </div>
                 <div>
-                    <img src="{{ asset('image/youni.png') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
-                    <p class="text-lg font-bold">Jaden Panggabean</p>
+                    <img src="{{ asset('image/dhpm wakil.jpg') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
+                    <p class="text-lg font-bold">GABRIEL SIGALINGGING</p>
                     <p>Wakil Kepala Divisi</p>
                 </div>
             </div>

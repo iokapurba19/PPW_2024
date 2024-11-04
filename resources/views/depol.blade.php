@@ -4,37 +4,37 @@
     <div class="container mx-auto py-10">
         <!-- Header Section -->
         <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold mb-4">DEPARTEMEN PUSAT DALAM KAMPUS</h1>
+            <h1 class="text-4xl font-bold mb-4">DEPARTEMEN OLAHRAGA</h1>
             <p class="text-gray-600 max-w-5zxl mx-auto">
-            Berperan dalam mengurus aktivitas serta melakukan konsolidasi internal pada UKM dan HIMPARO.            </p>
+            Berperan dalam mewadahi, meningkatkan, dan mengapresiasi mahasiswa yang memiliki minat dan bakat dalam bidang olahraga serta meningkatkan animo olahraga di IT Del            </p>
         </div>
 
         <!-- Images and Description -->
         <div class="flex justify-center mb-12">
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/DPDK.png') }}" alt="Department Logo" class="rounded-md mx-auto w-96 ">
+                <img src="{{ asset('image/DEPOL.png') }}" alt="Department Logo" class="rounded-md mx-auto w-fit h-80 mr-3">
             </div>
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/prodeg.png') }}" alt="Department Event" class="rounded-md mx-auto">
+                <img src="{{ asset('image/Depol_keg.jpg') }}" alt="Department Event" class="rounded-md mx-auto w-fit h-80 ml-2 mt-1/2">
             </div>
         </div>
 
         <!-- Leaders Section -->
-        <div class="text-center mb-12">
-            <div class="flex justify-center space-x-8">
-                <div>
-                <img src="{{ asset('image/joseph.png') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mr-5 ml-15">
-                    <p class="text-lg font-bold">MARIANA APRILYA</p>
+        <div class="flex justify-center space-x-10 text-center mb-12">
+            <div class="flex space-x-20 items-center ">
+                <div class="text-center ml-3">
+                    <img src="{{ asset('image/ketua depol.jpg') }}" alt="Leader 1" class="w-72 rounded-full mb-5">
+                    <p class="text-lg font-bold">ALBERT PANGGABEAN</p>
                     <p>Kepala Divisi</p>
-
                 </div>
-                <div>
-                    <img src="{{ asset('image/youni.png') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
-                    <p class="text-lg font-bold">JADEN PANGGABEAN</p>
+                <div class="text-center mb-5">
+                    <img src="{{ asset('image/wakil.jpg') }}" alt="Leader 2" class="w-72 rounded-full mb-4">
+                    <p class="text-lg font-bold ">SALWA HARAHAP</p>
                     <p>Wakil Kepala Divisi</p>
                 </div>
             </div>
         </div>
+        
 
         <!-- Program Kerja Section -->
         <div class="text-center mb-12">
