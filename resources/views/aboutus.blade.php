@@ -88,6 +88,16 @@
         <p class="text-sm">6 Projects</p> --}}
       </div>
     </div>
+
+    <div class="relative group min-w-[250px]">
+      <img src="{{ asset('image/padus.png') }}" alt="Social Media Design" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+      <div class=""text-center mt-2>
+        <h3 class="text-lg font-semibold">3dc</h3>
+      {{-- <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+        <h3 class="text-lg font-semibold">Social Media Design</h3>
+        <p class="text-sm">4 Projects</p> --}}
+      </div>
+    </div>
   </div>
 </div>
 
