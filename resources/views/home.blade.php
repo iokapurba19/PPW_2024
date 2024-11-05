@@ -1,14 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="bg-cover bg-center h-screen relative" style="background-image: url('{{ asset('image/del.jpg') }}')">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="container mx-auto h-full flex flex-col justify-end items-start relative z-10 text-white text-left p-10">
-            <h1 class="text-4xl font-bold mb-10">BEM INSTITUT TEKNOLOGI DEL</h1>
-            <h2 class="text-2xl mb-10">KABINET SAHALA SAUDURAN 2023/2024</h2>
-            <a href="#" class="mb-9 px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">What we do</a>
-        </div>
+<div class="parallax bg-cover bg-center h-screen relative" style="background-image: url('{{ asset('image/del.jpg') }}')">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="container mx-auto h-full flex flex-col justify-end items-start relative z-10 text-white text-left p-10">
+        <h1 class="text-4xl font-bold mb-10">BEM INSTITUT TEKNOLOGI DEL</h1>
+        <h2 class="text-2xl mb-10">KABINET SAHALA SAUDURAN 2023/2024</h2>
+        <a href="#" class="mb-9 px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">What we do</a>
     </div>
+</div>
+
 
     <section class="container mx-auto py-20">
     <div class="flex items-start mb-10 mx-10">
@@ -73,6 +74,14 @@
         </div>
     </div>
 </section>
+<style>
+    .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
 
     <!-- Bagian Departemen -->
     <section class="container mx-auto py-20">
@@ -134,4 +143,6 @@
             </div>
         </div>
     </section>
+
+    
 @endsection

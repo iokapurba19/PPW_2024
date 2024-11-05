@@ -31,60 +31,86 @@
 <h2 class="text-center text-3xl font-bold mt-10 animate-fade-in">Program Unit Kegiatan Mahasiswa</h2>
 
 <!-- Main Content -->
-<div class="container mx-auto p-6 pt-24">
+<div class="container mx-auto p-6 pt-24 relative">
   <!-- Slider container with horizontal scrolling -->
-  <div class="flex space-x-6 overflow-x-auto scrollbar-hide">
+  <div id="slider" class="flex space-x-6 overflow-x-auto scrollbar-hide scroll-smooth">
     <!-- Identity Design Section -->
-    <div class="relative group min-w-[250px] animate-slide-up">
-      <img src="{{ asset('image/basket.png') }}" alt="Identity Design" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+    <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
+      <img src="{{ asset('image/basket.png') }}" alt="Basket" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
-          <h3 class="text-lg font-semibold">Basket</h3>
+        <h3 class="text-lg font-semibold">Basket</h3>
       </div>
     </div>
 
-    <!-- Website Development Section -->
-    <div class="relative group min-w-[250px] animate-slide-up">
-      <img src="{{ asset('image/gdsc.png') }}" alt="Website Development" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+    <!-- GDSC -->
+    <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
+      <img src="{{ asset('image/gdsc.png') }}" alt="GDSC" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">GDSC</h3>
       </div>
     </div>
 
-    <!-- UI/UX Design Section -->
-    <div class="relative group min-w-[250px] animate-slide-up">
-      <img src="{{ asset('image/gitar.png') }}" alt="UI/UX Design" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+    <!-- Gitar -->
+    <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
+      <img src="{{ asset('image/gitar.png') }}" alt="Gitar" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">Gitar</h3>
       </div>
     </div>
 
-    <!-- Social Media Design Section -->
-    <div class="relative group min-w-[250px] animate-slide-up">
-      <img src="{{ asset('image/padus.png') }}" alt="Social Media Design" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+    <!-- PSM -->
+    <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
+      <img src="{{ asset('image/padus.png') }}" alt="PSM" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">PSM</h3>
       </div>
     </div>
 
-    <!-- Printable Design Section -->
-    <div class="relative group min-w-[250px] animate-slide-up">
-      <img src="{{ asset('image/english.png') }}" alt="Printable Design" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+    <!-- English -->
+    <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
+      <img src="{{ asset('image/english.png') }}" alt="English" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">English</h3>
       </div>
     </div>
 
-    <div class="relative group min-w-[250px]">
-      <img src="{{ asset('image/padus.png') }}" alt="Social Media Design" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
-      <div class=""text-center mt-2>
+    <!-- 3DC -->
+    <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
+      <img src="{{ asset('image/padus.png') }}" alt="3dc" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+      <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">3dc</h3>
-      {{-- <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
-        <h3 class="text-lg font-semibold">Social Media Design</h3>
-        <p class="text-sm">4 Projects</p> --}}
       </div>
     </div>
   </div>
+
+  <!-- Navigation Buttons -->
+  <button onclick="slideLeft()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2">
+    &#9664; <!-- Previous icon -->
+  </button>
+  <button onclick="slideRight()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2">
+    &#9654; <!-- Next icon -->
+  </button>
 </div>
+
+<!-- JavaScript for navigation functionality -->
+<script>
+  const slider = document.getElementById('slider');
+
+  function slideLeft() {
+    slider.scrollBy({
+      left: -300, // Adjust scroll distance as needed
+      behavior: 'smooth'
+    });
+  }
+
+  function slideRight() {
+    slider.scrollBy({
+      left: 300, // Adjust scroll distance as needed
+      behavior: 'smooth'
+    });
+  }
+</script>
+
 
 <!-- Custom CSS for animations and to hide default scrollbar -->
 <style>

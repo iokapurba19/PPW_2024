@@ -75,6 +75,14 @@ Route::get('/sarpras', function () {
     return view('sarpras');
 })->name('sarpras');
 
+Route::get('/try', function () {
+    return view('try');
+})->name('try');
+
+Route::get('/test', function () {
+    return view('test');
+})->name('test');
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/index', [HomeController::class, 'indexes'])->name('indexes');
