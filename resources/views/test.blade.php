@@ -1,130 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESTING</title>
-    <link rel="stylesheet" href="loginstyle.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <style>
+@extends('layouts.app')
 
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: #EFF7F2;
-        }
-
-        .wrapper {
-            width: 420px;
-            padding: 30px;
-            background: white;
-            color: black;
-            border-radius: 15px;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        .wrapper h1 {
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .input-box {
-            position: relative;
-            margin-bottom: 20px;
-        }
-
-        .input-box input {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 5px;
-            border: 2px solid #ccc; /* Menambahkan border */
-            background: #fff;
-            color: #333;
-            border-radius: 5px;
-            outline: none; /* Menghilangkan outline saat input di-focus */
-        }
-
-        .input-box input:focus {
-            border-color: #333; /* Mengubah warna border saat input di-focus */
-        }
-
-        .input-box i {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #333;
-        }
-
-        .remember-forgot {
-            display: flex;
-            color: black;
-            justify-content: space-between;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-
-
-        .btn {
-            width: 100%;
-            background: #333;
-            padding: 10px;
-            border: none;
-            color: #fff;
-            font-size: 16px;
-        }
-
-        .register-link {
-            color: black;
-
-        }
-
-        </style>
-</head>
-
-<body>
-    <div class="wrapper">
-        <form method="POST" action="{{route('register.post')}}">
-            @csrf
-            <h1>TESTING</h1>
-            <div class="input-box">
-                <input type="text" name="testname" placeholder="User Name" required>
-                <i class='bx bxs-user'></i>
-            </div>
-            <div class="input-box">
-                <input type="email" name="testemail" placeholder="Email Address" required>
-                <i class='bx bxs-envelope'></i>
-            </div>
-            <div class="input-box">
-                <input type="text" name="password" placeholder="Password" required>
-                <i class='bx bxs-lock-alt'></i>
-            </div>
-            <!-- <div class="input-box">
-                <input type="password" name="password" placeholder="Confirm Password" required>
-                <i class='bx bxs-lock-alt'></i>
-            </div> -->
-            <div class="remember-forgot">
-                <label><input type="checkbox"> Remember Me</label>
-            </div>
-            <button type="submit" class="btn">Register</button>
-            <div class="register-link">
-                <p>Already have an account? <a href="{{ url('/login') }}">Log in</a></p>
-            </div>
-        </form>
+@section('content')
+<div class="parallax bg-cover bg-center h-screen relative" style="background-image: url('{{ asset('image/del.jpg') }}')">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="container mx-auto h-full flex flex-col justify-end items-start relative z-10 text-white text-left p-10">
+        <h1 class="text-4xl font-bold mb-10">BEM INSTITUT TEKNOLOGI DEL</h1>
+        <h2 class="text-2xl mb-10">KABINET SAHALA SAUDURAN 2023/2024</h2>
+        <a href="#" class="mb-9 px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">What we do</a>
     </div>
-</body>
-</html>
+</div>
+
+
+    <section class="container mx-auto py-20">
+    <div class="flex items-start mb-10 mx-10">
+        <!-- Bagian Teks -->
+        <div class="w-1/2 pr-10">
+            <h2 class="text-4xl font-bold py-2">Know about us</h2>
+            <h2 class="text-3xl font-bold">We empower your voice on campus</h2>
+            <p class="text-gray-600 mt-4">Kami hadir sebagai wadah bagi mahasiswa ITDel untuk berkolaborasi, berinovasi, dan menyuarakan aspirasi. Kami berperan dalam menyelenggarakan berbagai program serta kegiatan yang mendukung pengembangan akademik dan karakter mahasiswa, sekaligus menjadi jembatan antara mahasiswa dan pihak kampus.</p>
+            <div class="mt-6">
+                <a href="about" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
+            </div>
+        </div>
+
+        <!-- Bagian Gambar -->
+        <div class="w-1/2 pl-10">
+            <img src="{{ asset('image/inagurasi.jpg') }}" alt="Campus Collaboration" class="rounded-lg shadow-md">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Bagian Visi dan Misi -->
+<section class="bg-yellow-100 py-20">
+    <div class="container mx-auto text-left px-4 md:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left">VISI & MISI</h2>
+
+        <div class="flex flex-wrap md:flex-nowrap justify-between items-start">
+            <!-- Visi -->
+            <div class="w-full md:w-2/3 p-5">
+                <h3 class="text-2xl md:text-4xl roboto mb-4">VISI</h3>
+                <p class="text-gray-800 font-semibold">
+                    Mewujudkan Badan Eksekutif Mahasiswa IT Del yang lebih baik melalui partisipasi aktif mahasiswa dalam berbagai aspek kehidupan kampus dan masyarakat serta mendengar segala bentuk aspirasi Mahasiswa.
+                </p>
+            </div>
+            <!-- Foto Ketua di sebelah kanan -->
+            <div class="w-full md:w-1/3 flex justify-center md:justify-end items-center mt-6 md:mt-0">
+                <div class="text-center">
+                    <img src="{{ asset('image/newsamuel.png') }}" alt="Samuel Simbolon" class="w-48 h-48 md:w-64 md:h-64  mx-auto">
+                    <p class="mt-2 text-lg">Rony, Ketua BEM 2023/2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap md:flex-nowrap justify-between items-start mt-10">
+            <!-- Foto Wakil Ketua di sebelah kiri -->
+            <div class="w-full md:w-1/3 flex justify-center md:justify-start items-center mb-6 mr-20 md:mb-0 mr-5">
+                <div class="text-center">
+                    <img src="{{ asset('image/newrony.png') }}" alt="Bayu Peter Bukit" class="w-48 h-48  md:w-64 md:h-64  mb-25 ml-10">
+                    <p class="mt-2 text-lg">Samuel, Wakil Ketua BEM 2023/2024</p>
+                </div>
+            </div>
+            <!-- Misi -->
+            <div class="w-full md:w-2/3 pr-0 md:pr-10">
+                <h3 class="text-2xl md:text-4xl font-semibold mb-4">MISI</h3>
+                <ul class="text-gray-700 list-disc list-inside space-y-2">
+                    <li>Mewakili suara mahasiswa dan memperjuangkan kepentingan mahasiswa di tingkat kampus dan nasional.</li>
+                    <li>Menyelenggarakan berbagai kegiatan yang bermanfaat dan menarik untuk kemajuan akademik, sosial, dan keagamaan mahasiswa.</li>
+                    <li>Membangun jaringan kerjasama dengan lembaga di dalam dan luar kampus untuk meningkatkan kualitas dan kuantitas kegiatan BEM.</li>
+                    <li>Meningkatkan partisipasi mahasiswa dalam kegiatan organisasi, baik sebagai peserta maupun pengurus.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+    <!-- Bagian Departemen -->
+    <section class="container mx-auto py-20">
+        <h2 class="text-3xl font-bold text-center mb-10">DEPARTEMEN</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- departemen -->
+            <a class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer" href="/diptek">
+                <img src="{{ asset('image/diptek.jpg') }}" alt="Departemen 1" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Departemen Ilmu Pengetahuan dan Teknologi</h3>
+                <p class="text-gray-600">Mengelola bidang ilmu pengetahuan dan teknologi, membantu meningkatkan minat akademik mahasiswa ITDel.</p>
+            </a>
+
+            <a class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer" href="/depagsos">
+                <img src="{{ asset('image/depagsos.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Departemen Agama dan Sosial</h3>
+                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
+            </a>
+
+            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
+                <img src="{{ asset('image/Depsenbud.png') }}" alt="Departemen 3" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Departemen Seni dan Budaya</h3>
+                <p class="text-gray-600">Menumbuhkan dan memelihara kebudayaan dan seni di kalangan mahasiswa ITDel.</p>
+            </div>
+
+            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
+                <img src="{{ asset('image/DEPKEBDIS.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Departemen Ketertiban dan Kedisplinan</h3>
+                <p class="text-gray-600"> Departemen ini mengawasi proses jalannya ketertiban dan kedisiplinan mahasiswa/mahasiswi sesuai dengan peraturan dan regulasi yang berlaku di IT Del.</p>
+            </div>
+
+            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
+                <img src="{{ asset('image/Depkominfo.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Departemen Komunikasi dan Informasi</h3>
+                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
+            </div>
+
+            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer">
+                <img src="{{ asset('image/DPDK.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Departemen Pusat Dalam Kampus</h3>
+                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
+            </div>
+
+            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer">
+                <img src="{{ asset('image/DEPOL.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Departemen Olahraga</h3>
+                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
+            </div>
+
+            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
+                <img src="{{ asset('image/DHPM.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Departemen Hubungan dan Pengabdian Masyarakat</h3>
+                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
+            </div>
+
+            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
+                <img src="{{ asset('image/Sarpras.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Departemen Sarana dan Prasarana</h3>
+                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
+            </div>
+        </div>
+    </section>
+
+    
+@endsection

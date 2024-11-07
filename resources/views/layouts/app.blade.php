@@ -36,13 +36,14 @@
                 
                 <!-- Dropdown Menu -->
                 <li class="relative group">
-                    <a href="#" class="text-gray-700 hover:text-blue-500 flex items-center">
+                    <button class="text-gray-700 hover:text-blue-500 flex items-center" onclick="toggleDropdown(event)">
                         Department
                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </a>
-                    <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 transform translate-y-2 z-50">
+                    <div id="dropdownMenu" style="position: absolute; top: 100%; left: 0; margin-top: 4px; width: 192px; background-color: white; border-radius: 0.25rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" class="hidden z-50">
+                        <!-- Konten Dropdown -->
                         <a href="/diptek" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DIPTEK</a>
                         <a href="/depagsos" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPAGSOS</a>
                         <a href="/dpdk" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DPDK</a>
@@ -54,6 +55,22 @@
                         <a href="/depsenbud" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPSENBUD</a>
                     </div>
                 </li>
+
+                <script>
+                    function toggleDropdown(event) {
+                    event.preventDefault();
+                    const dropdownMenu = document.getElementById('dropdownMenu');
+                    dropdownMenu.classList.toggle('hidden');
+                }
+                    document.addEventListener('click', function (e) {
+                        const dropdown = document.getElementById('dropdownMenu');
+                        if (!e.target.closest('.relative') && !dropdown.classList.contains('hidden')) {
+                            dropdown.classList.add('hidden');
+                        }
+                    });
+
+                </script>
+                
 
                 <li><a href="/vote" class="text-gray-700 hover:text-blue-500">Voting</a></li>
             </ul>

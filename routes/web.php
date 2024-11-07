@@ -83,6 +83,30 @@ Route::get('/test', function () {
     return view('test');
 })->name('test');
 
+Route::get('/basket', function () {
+    return view('basket');
+})->name('basket');
+
+Route::get('/GDSC', function () {
+    return view('GDSC');
+})->name('GDSC');
+
+Route::get('/Gitar', function () {
+    return view('Gitar');
+})->name('Gitar');
+
+Route::get('/Psm', function () {
+    return view('Psm');
+})->name('Psm');
+
+Route::get('/English', function () {
+    return view('English');
+})->name('English');
+
+Route::get('/3DC', function () {
+    return view('3DC');
+})->name('3DC');
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/index', [HomeController::class, 'indexes'])->name('indexes');
