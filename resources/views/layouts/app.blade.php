@@ -21,7 +21,7 @@
       </style>
 </head>
 <body class="bg-gray-100">
-    <nav class="bg-white shadow p-4">
+    <nav class="bg-white shadow p-4 sticky top-0 z-50">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="flex items-center space-x-4 mb-4 md:mb-0">
               <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">

@@ -64,6 +64,10 @@ Route::get('/dpdk', function () {
     return view('divisi-BEM/dpdk');
 })->name('dpdk');
 
+Route::get('/dhpm', function () {
+    return view('dhpm');
+})->name('dhpm');
+
 Route::get('/sarpras', function () {
     return view('divisi-BEM/sarpras');
 })->name('sarpras');
