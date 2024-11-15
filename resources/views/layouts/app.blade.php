@@ -47,7 +47,7 @@
                         <a href="/diptek" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DIPTEK</a>
                         <a href="/depagsos" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPAGSOS</a>
                         <a href="/dpdk" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DPDK</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DHPM</a>
+                        <a href="/dhpm" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DHPM</a>
                         <a href="/depkominfo" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPKOMINFO</a>
                         <a href="/sarpras" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">SARPRAS</a>
                         <a href="/depol" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPOL</a>

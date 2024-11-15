@@ -4,10 +4,19 @@ namespace App\Http\Controllers;
 
 class HomeController extends Controller
 {
-    public function index(){
-        return view('home');
+    function index(){
+        return view('menu/home');
     }
-    public function indexes(){
-        return view('index');
+    function login(){
+        return view('menu/login');
+    }
+    function register(){
+        return view('menu/register');
+    }
+    function about(){
+        return view('menu/aboutus');
+    }
+    function vote(){
+        return view('menu/vote');
     }
 }
