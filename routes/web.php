@@ -107,8 +107,6 @@ Route::get('/3DC', function () {
 })->name('3DC');
 
 
-
-
 route::get('/strukturbem', [BEMController::class, 'index'])->name('strukturbem');
 
 route::get('/tambahdata', [BEMController::class, 'tambahdata'])->name('tambahdata');
