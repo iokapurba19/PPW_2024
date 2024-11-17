@@ -23,7 +23,8 @@ Route::get('/admin', function () {
 
 Route::get('/content', function () {
     return view('Departcontent');
-})->name('departcontent');
+})->name('departcontent'); 
+
 
 Route::get('/creator', function () {
     return view('content');
